@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-gray-100 min-h-screen py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center bg-white rounded-lg shadow-md px-4 py-2 mb-4 m-auto">
-        <p class="font-semibold">幣別</p>
-        <p class="font-semibold">價格</p>
-        <p class="font-semibold">漲跌</p>
+  <div class="bg-zinc-800 min-h-screen py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="w-full flex justify-between items-center bg-zinc-600 rounded-lg shadow-md px-4 py-2 mb-4 text-center">
+        <p class="font-semibold w-1/3 text-white">幣別</p>
+        <p class="font-semibold w-1/3 text-white">價格</p>
+        <p class="font-semibold w-1/3 text-white">漲跌</p>
       </div>
       <CoinCart />
     </div>
