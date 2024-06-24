@@ -8,15 +8,16 @@
                     </div>
                     <div class="text-center ml-4">
                         <h3 class="text-xl font-bold text-white">{{ coinInfo.name }}</h3>
-                        <p class="text-white">usd</p>
+                        <p class="text-white">USD</p>
                     </div>
                 </div>
                 <div class="text-center w-32 p-2 text-white rounded-md mb-4 sm:mb-0 sm:ml-4">
-                    <p class="text-green-600 font-bold">{{ coinInfo.price.toFixed(2) }}</p>
+                    <p class="text-white font-bold">{{ coinInfo.price.toFixed(2) }}</p>
                     <p>最新成交價格</p>
                 </div>
                 <div class="text-center w-32 p-2 text-white rounded-md sm:ml-4">
-                    <p class="text-green-600 font-bold">{{ coinInfo.change.toFixed(2) }}%</p>
+                    <p :class="{ 'text-green-600': coinInfo.change > 0, 'text-red-600': coinInfo.change <= 0 }"
+                        class="text-green-600 font-bold">{{ coinInfo.change.toFixed(2) }}%</p>
                     <p>24小時</p>
                 </div>
             </div>
