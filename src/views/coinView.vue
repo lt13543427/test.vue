@@ -2,8 +2,8 @@
     <div class="flex items-center justify-center min-h-screen px-4 bg-zinc-800">
         <div class="p-8 rounded-lg shadow-md w-full max-w-md bg-[#181a20]">
             <div class="flex flex-col sm:flex-row sm:justify-between mb-4 ">
-                <div class="flex items-center mb-4 sm:mb-0">
-                    <div class="w-[50px] h-[50px] rounded-full overflow-hidden">
+                <div class="flex text-center rounded-md mb-4 sm:mb-0 sm:ml-4 justify-center">
+                    <div class="w-[50px] h-[50px] rounded-full">
                         <img :src="coinInfo.imageUrl" alt="" class="w-full h-full">
                     </div>
                     <div class="text-center ml-4">
@@ -11,11 +11,11 @@
                         <p class="text-white">USD</p>
                     </div>
                 </div>
-                <div class="text-center w-32 p-2 text-white rounded-md mb-4 sm:mb-0 sm:ml-4">
+                <div class="flex flex-col text-center w-34 p-2 text-white rounded-md mb-4 sm:mb-0 sm:ml-4">
                     <p class="text-white font-bold">{{ coinInfo.price.toFixed(2) }}</p>
                     <p>最新成交價格</p>
                 </div>
-                <div class="text-center w-32 p-2 text-white rounded-md sm:ml-4">
+                <div class="flex flex-col text-center w-34 p-2 text-white rounded-md mb-4 sm:mb-0 sm:ml-4">
                     <p :class="{ 'text-green-600': coinInfo.change > 0, 'text-red-600': coinInfo.change <= 0 }"
                         class="text-green-600 font-bold">{{ coinInfo.change.toFixed(2) }}%</p>
                     <p>24小時</p>
